@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Midterm_Karanveer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bjZ-Nb-TWI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpy-Bu-Vhh">
+                                <rect key="frame" x="0.0" y="169" width="414" height="107.33333333333331"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="KARANVEER'S CAR GARAGE">
+                                        <attributes>
+                                            <font key="NSFont" size="45" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-aY-xBm">
+                                <rect key="frame" x="100" y="562" width="214" height="36"/>
+                                <color key="tintColor" red="1" green="0.74899798630000003" blue="0.38438177109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="VIEW CAR DETAILS">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Optima-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="CCz-cL-agt" kind="presentation" id="LOK-kx-dLL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRt-bi-PAf">
+                                <rect key="frame" x="100" y="476.33333333333331" width="214" height="35.666666666666686"/>
+                                <color key="tintColor" red="1" green="0.74899798630000003" blue="0.38438177109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ENTER CAR DETAILS">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Optima-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="03b-8E-E2I" kind="presentation" id="LmN-GO-R8n"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car-main-page.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="MdS-cY-c01">
+                                <rect key="frame" x="100" y="308.33333333333331" width="214" height="129"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="MdS-cY-c01" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="2ZY-4F-OiE"/>
+                            <constraint firstItem="WRt-bi-PAf" firstAttribute="top" secondItem="Gpy-Bu-Vhh" secondAttribute="bottom" constant="200" id="6c1-gH-NeT"/>
+                            <constraint firstItem="MdS-cY-c01" firstAttribute="top" secondItem="Gpy-Bu-Vhh" secondAttribute="bottom" constant="32" id="9yn-Eg-Er4"/>
+                            <constraint firstItem="bjZ-Nb-TWI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iya-Mr-3xG"/>
+                            <constraint firstItem="Gpy-Bu-Vhh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="L0m-At-QH1"/>
+                            <constraint firstItem="Gpy-Bu-Vhh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W3n-JQ-E1H"/>
+                            <constraint firstItem="iPl-aY-xBm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Wxu-hZ-vPE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MdS-cY-c01" secondAttribute="trailing" constant="100" id="crO-Q4-wDl"/>
+                            <constraint firstAttribute="bottom" secondItem="bjZ-Nb-TWI" secondAttribute="bottom" id="de8-l2-taX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iPl-aY-xBm" secondAttribute="trailing" constant="100" id="kDo-4g-vmZ"/>
+                            <constraint firstItem="WRt-bi-PAf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="lsD-IX-rwc"/>
+                            <constraint firstItem="WRt-bi-PAf" firstAttribute="top" secondItem="MdS-cY-c01" secondAttribute="bottom" constant="39" id="p2R-zL-8vr"/>
+                            <constraint firstItem="iPl-aY-xBm" firstAttribute="top" secondItem="WRt-bi-PAf" secondAttribute="bottom" constant="50" id="pZc-Sy-w4X"/>
+                            <constraint firstItem="bjZ-Nb-TWI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="r4s-KT-1G4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WRt-bi-PAf" secondAttribute="trailing" constant="100" id="rwZ-Ke-COr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gpy-Bu-Vhh" secondAttribute="trailing" id="vlR-dK-EVG"/>
+                            <constraint firstItem="bjZ-Nb-TWI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wZW-IJ-IAk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="cZX-iN-yXE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="87.786259541984734" y="-27.464788732394368"/>
+        </scene>
+        <!--Display Car View Controller-->
+        <scene sceneID="Lfh-dU-NQx">
+            <objects>
+                <viewController id="CCz-cL-agt" customClass="DisplayCarViewController" customModule="Midterm_Karanveer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hPC-4R-D0x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ADO-GF-lmK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZI-rP-C2d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="VIEW CAR INFORMATION" id="F1L-aV-Zx2">
+                                        <barButtonItem key="leftBarButtonItem" title="BACK" id="mWD-qP-EJ7">
+                                            <connections>
+                                                <segue destination="3to-G1-m7o" kind="unwind" unwindAction="unwindToViewControllerWithSender:" id="Saa-aM-6DG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXH-Jh-KDY">
+                                <rect key="frame" x="0.0" y="173.66666666666666" width="414" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Make ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17N-vu-Obt">
+                                <rect key="frame" x="0.0" y="240.66666666666666" width="414" height="26.999999999999972"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Color">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtN-RH-bxc">
+                                <rect key="frame" x="0.0" y="307.66666666666669" width="414" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Model">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nd-e6-w3H">
+                                <rect key="frame" x="0.0" y="91" width="414" height="32.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="YOUR CAR INFORMATION">
+                                        <attributes>
+                                            <font key="NSFont" size="27" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDO-1Q-SS8">
+                                <rect key="frame" x="100" y="518" width="214" height="36"/>
+                                <color key="tintColor" red="1" green="0.74899798630000003" blue="0.38438177109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ANIMATION PAGE">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Optima-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="1Un-Y2-BOR" kind="presentation" id="H1J-SP-QPb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhS-AF-m1l">
+                                <rect key="frame" x="0.0" y="374.66666666666669" width="414" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Year">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37M-6d-1FC">
+                                <rect key="frame" x="0.0" y="441.66666666666669" width="414" height="26.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Kilometers">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RyS-5e-LtX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yZI-rP-C2d" firstAttribute="top" secondItem="RyS-5e-LtX" secondAttribute="top" id="0LI-79-7te"/>
+                            <constraint firstItem="IXH-Jh-KDY" firstAttribute="trailing" secondItem="RyS-5e-LtX" secondAttribute="trailing" id="1dF-8k-Aj4"/>
+                            <constraint firstItem="37M-6d-1FC" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" id="2C4-DP-ZTw"/>
+                            <constraint firstItem="17N-vu-Obt" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" id="2bm-HM-4pD"/>
+                            <constraint firstItem="NDO-1Q-SS8" firstAttribute="top" secondItem="37M-6d-1FC" secondAttribute="bottom" constant="50" id="2nt-nQ-U7g"/>
+                            <constraint firstItem="ADO-GF-lmK" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" id="DcS-92-fgi"/>
+                            <constraint firstItem="IXH-Jh-KDY" firstAttribute="top" secondItem="0Nd-e6-w3H" secondAttribute="bottom" constant="50" id="GYs-QJ-09J"/>
+                            <constraint firstAttribute="bottom" secondItem="ADO-GF-lmK" secondAttribute="bottom" id="M1B-D9-wrf"/>
+                            <constraint firstItem="jtN-RH-bxc" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" id="O0W-Pr-l4w"/>
+                            <constraint firstItem="ADO-GF-lmK" firstAttribute="top" secondItem="RyS-5e-LtX" secondAttribute="top" id="PYy-NR-dBG"/>
+                            <constraint firstItem="jtN-RH-bxc" firstAttribute="trailing" secondItem="RyS-5e-LtX" secondAttribute="trailing" id="QUF-ue-kYA"/>
+                            <constraint firstItem="0Nd-e6-w3H" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" id="TIW-Xd-Dtr"/>
+                            <constraint firstItem="ADO-GF-lmK" firstAttribute="trailing" secondItem="RyS-5e-LtX" secondAttribute="trailing" id="Tb1-Oz-CFi"/>
+                            <constraint firstItem="NDO-1Q-SS8" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" constant="100" id="V2f-Nh-uO2"/>
+                            <constraint firstItem="jtN-RH-bxc" firstAttribute="top" secondItem="17N-vu-Obt" secondAttribute="bottom" constant="40" id="VIr-VX-1Rb"/>
+                            <constraint firstItem="yZI-rP-C2d" firstAttribute="trailing" secondItem="RyS-5e-LtX" secondAttribute="trailing" id="aIj-dM-cG5"/>
+                            <constraint firstItem="IXH-Jh-KDY" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" id="akB-gY-dNa"/>
+                            <constraint firstItem="fhS-AF-m1l" firstAttribute="top" secondItem="jtN-RH-bxc" secondAttribute="bottom" constant="40" id="b8F-N4-OKL"/>
+                            <constraint firstItem="0Nd-e6-w3H" firstAttribute="trailing" secondItem="RyS-5e-LtX" secondAttribute="trailing" id="bJ1-s8-x4e"/>
+                            <constraint firstItem="RyS-5e-LtX" firstAttribute="trailing" secondItem="NDO-1Q-SS8" secondAttribute="trailing" constant="100" id="dVc-UQ-MfJ"/>
+                            <constraint firstItem="37M-6d-1FC" firstAttribute="top" secondItem="fhS-AF-m1l" secondAttribute="bottom" constant="40" id="jFl-Oa-LLK"/>
+                            <constraint firstItem="yZI-rP-C2d" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" id="kCZ-NT-AUD"/>
+                            <constraint firstItem="0Nd-e6-w3H" firstAttribute="top" secondItem="yZI-rP-C2d" secondAttribute="bottom" constant="35" id="pQS-Vf-NIk"/>
+                            <constraint firstItem="37M-6d-1FC" firstAttribute="trailing" secondItem="RyS-5e-LtX" secondAttribute="trailing" id="rJ2-Cl-d0U"/>
+                            <constraint firstItem="fhS-AF-m1l" firstAttribute="trailing" secondItem="RyS-5e-LtX" secondAttribute="trailing" id="tNi-Cn-u4n"/>
+                            <constraint firstItem="17N-vu-Obt" firstAttribute="top" secondItem="IXH-Jh-KDY" secondAttribute="bottom" constant="40" id="tYN-OP-hcn"/>
+                            <constraint firstItem="fhS-AF-m1l" firstAttribute="leading" secondItem="RyS-5e-LtX" secondAttribute="leading" id="ud1-Nx-Xh8"/>
+                            <constraint firstItem="17N-vu-Obt" firstAttribute="trailing" secondItem="RyS-5e-LtX" secondAttribute="trailing" id="yH6-c1-3Wj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbColor" destination="17N-vu-Obt" id="nr1-fe-xvx"/>
+                        <outlet property="lbKms" destination="37M-6d-1FC" id="OTw-mb-8zW"/>
+                        <outlet property="lbMake" destination="IXH-Jh-KDY" id="YWR-br-kCr"/>
+                        <outlet property="lbModel" destination="jtN-RH-bxc" id="0D7-3R-TMB"/>
+                        <outlet property="lbYear" destination="fhS-AF-m1l" id="rsW-h6-59K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptv-3T-DEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3to-G1-m7o" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="348"/>
+        </scene>
+        <!--Edit Car View Controller-->
+        <scene sceneID="z82-7I-KRp">
+            <objects>
+                <viewController id="03b-8E-E2I" customClass="EditCarViewController" customModule="Midterm_Karanveer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="svI-UN-EmB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="byV-r2-2ld">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rj-tB-mLw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="ENTER CAR DETAILS" id="T7Z-It-3e1">
+                                        <barButtonItem key="leftBarButtonItem" title="BACK" id="BOY-By-wNW">
+                                            <connections>
+                                                <segue destination="cZX-iN-yXE" kind="unwind" unwindAction="unwindToViewControllerWithSender:" id="Nj2-hs-kKW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osv-Jo-vQh">
+                                <rect key="frame" x="0.0" y="101" width="414" height="32.333333333333343"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ENTER YOUR CAR DETAILS ">
+                                        <attributes>
+                                            <font key="NSFont" size="27" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA3-Qh-Emv">
+                                <rect key="frame" x="0.0" y="261.33333333333331" width="414" height="26.666666666666686"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Make ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fS-ec-8aI">
+                                <rect key="frame" x="0.0" y="352" width="414" height="26"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Model">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zs-lk-B5S">
+                                <rect key="frame" x="0.0" y="442" width="414" height="26.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Year">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiB-0k-uzV">
+                                <rect key="frame" x="0.0" y="163.33333333333334" width="414" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Color">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Pe-un-hG9">
+                                <rect key="frame" x="50" y="200.33333333333334" width="314" height="32"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Blue"/>
+                                    <segment title="White"/>
+                                    <segment title="Grey"/>
+                                    <segment title="Green "/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter Company Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YMR-hj-dC0">
+                                <rect key="frame" x="100" y="298" width="214" height="34"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="03b-8E-E2I" id="Rp6-RP-Hyt"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter Car Year" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eMl-1L-5Sy">
+                                <rect key="frame" x="100" y="478.33333333333331" width="214" height="33.999999999999943"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="03b-8E-E2I" id="eDr-Fb-UcH"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter Model Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-Sj-NK3">
+                                <rect key="frame" x="100" y="388" width="214" height="34"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="03b-8E-E2I" id="eg7-o0-qdw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oas-2P-gaf">
+                                <rect key="frame" x="100" y="643" width="214" height="36"/>
+                                <color key="tintColor" red="1" green="0.74899798630000003" blue="0.38438177109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="SUBMIT">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Optima-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitCarDetails:" destination="03b-8E-E2I" eventType="touchUpInside" id="Dn1-9p-aAu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter Kilometers " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUk-aT-SNn">
+                                <rect key="frame" x="100" y="569" width="214" height="34"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="03b-8E-E2I" id="LGY-SH-9RM"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFY-NR-SeF">
+                                <rect key="frame" x="0.0" y="532.33333333333337" width="414" height="26.666666666666629"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Kilometers">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CWC-fG-cAK"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Osv-Jo-vQh" firstAttribute="top" secondItem="7rj-tB-mLw" secondAttribute="bottom" constant="45" id="0is-mH-9mm"/>
+                            <constraint firstItem="KUk-aT-SNn" firstAttribute="top" secondItem="KFY-NR-SeF" secondAttribute="bottom" constant="10" id="1CU-9w-nIX"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="7Pe-un-hG9" secondAttribute="trailing" constant="50" id="1X6-Ny-jfT"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="1fS-ec-8aI" secondAttribute="trailing" id="4PX-d9-b9e"/>
+                            <constraint firstItem="KFY-NR-SeF" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" id="4oQ-hP-B8I"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="XiB-0k-uzV" secondAttribute="trailing" id="5wP-sX-feM"/>
+                            <constraint firstItem="7Pe-un-hG9" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" constant="50" id="61X-Qg-JC6"/>
+                            <constraint firstItem="eMl-1L-5Sy" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" constant="100" id="Alx-1O-bfy"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="KUk-aT-SNn" secondAttribute="trailing" constant="100" id="AwU-xS-K94"/>
+                            <constraint firstAttribute="bottom" secondItem="byV-r2-2ld" secondAttribute="bottom" id="BjT-nB-wOe"/>
+                            <constraint firstItem="KUk-aT-SNn" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" constant="100" id="FDd-oD-sSZ"/>
+                            <constraint firstItem="byV-r2-2ld" firstAttribute="top" secondItem="CWC-fG-cAK" secondAttribute="top" id="HO2-ct-EBC"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="Osv-Jo-vQh" secondAttribute="trailing" id="HqM-IC-2hx"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="eMl-1L-5Sy" secondAttribute="trailing" constant="100" id="MPc-JN-AEW"/>
+                            <constraint firstItem="7Pe-un-hG9" firstAttribute="top" secondItem="XiB-0k-uzV" secondAttribute="bottom" constant="10" id="MfQ-5H-g2f"/>
+                            <constraint firstItem="oas-2P-gaf" firstAttribute="top" secondItem="KUk-aT-SNn" secondAttribute="bottom" constant="40" id="PbC-T7-ilK"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="ebg-Sj-NK3" secondAttribute="trailing" constant="100" id="PcR-B5-gmL"/>
+                            <constraint firstItem="7rj-tB-mLw" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" id="Pr7-pG-orw"/>
+                            <constraint firstItem="1fS-ec-8aI" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" id="QOM-nk-Ivt"/>
+                            <constraint firstItem="YMR-hj-dC0" firstAttribute="top" secondItem="eA3-Qh-Emv" secondAttribute="bottom" constant="10" id="X3v-OL-ITb"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="oas-2P-gaf" secondAttribute="trailing" constant="100" id="YsT-8e-hGe"/>
+                            <constraint firstItem="eMl-1L-5Sy" firstAttribute="top" secondItem="8zs-lk-B5S" secondAttribute="bottom" constant="10" id="ZaK-4s-TLZ"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="KFY-NR-SeF" secondAttribute="trailing" id="aXq-gd-HxC"/>
+                            <constraint firstItem="oas-2P-gaf" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" constant="100" id="apq-Pz-GFE"/>
+                            <constraint firstItem="byV-r2-2ld" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" id="cfo-jN-DUv"/>
+                            <constraint firstItem="eA3-Qh-Emv" firstAttribute="top" secondItem="7Pe-un-hG9" secondAttribute="bottom" constant="30" id="eD1-8T-iGf"/>
+                            <constraint firstItem="XiB-0k-uzV" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" id="eMU-ue-9cE"/>
+                            <constraint firstItem="Osv-Jo-vQh" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" id="gLg-Ri-PgK"/>
+                            <constraint firstItem="1fS-ec-8aI" firstAttribute="top" secondItem="YMR-hj-dC0" secondAttribute="bottom" constant="20" id="gP3-S6-x2a"/>
+                            <constraint firstItem="7rj-tB-mLw" firstAttribute="top" secondItem="CWC-fG-cAK" secondAttribute="top" id="ga3-4M-mfl"/>
+                            <constraint firstItem="7rj-tB-mLw" firstAttribute="trailing" secondItem="CWC-fG-cAK" secondAttribute="trailing" id="gwG-2e-fUo"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="7rj-tB-mLw" secondAttribute="trailing" id="gyh-PV-HaT"/>
+                            <constraint firstItem="byV-r2-2ld" firstAttribute="trailing" secondItem="CWC-fG-cAK" secondAttribute="trailing" id="h6j-a7-tht"/>
+                            <constraint firstItem="XiB-0k-uzV" firstAttribute="top" secondItem="Osv-Jo-vQh" secondAttribute="bottom" constant="30" id="jDy-c0-Uwa"/>
+                            <constraint firstItem="ebg-Sj-NK3" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" constant="100" id="k7Z-yn-FyY"/>
+                            <constraint firstItem="8zs-lk-B5S" firstAttribute="trailing" secondItem="CWC-fG-cAK" secondAttribute="trailing" id="lJ2-io-Ylv"/>
+                            <constraint firstItem="ebg-Sj-NK3" firstAttribute="top" secondItem="1fS-ec-8aI" secondAttribute="bottom" constant="10" id="lQZ-5H-1RF"/>
+                            <constraint firstItem="8zs-lk-B5S" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" id="lw2-32-Yzk"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="YMR-hj-dC0" secondAttribute="trailing" constant="100" id="mZ1-BC-7NW"/>
+                            <constraint firstItem="8zs-lk-B5S" firstAttribute="top" secondItem="ebg-Sj-NK3" secondAttribute="bottom" constant="20" id="nba-yG-lAL"/>
+                            <constraint firstItem="CWC-fG-cAK" firstAttribute="trailing" secondItem="eA3-Qh-Emv" secondAttribute="trailing" id="o7o-9T-QId"/>
+                            <constraint firstItem="eA3-Qh-Emv" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" id="pjz-KB-FlF"/>
+                            <constraint firstItem="YMR-hj-dC0" firstAttribute="leading" secondItem="CWC-fG-cAK" secondAttribute="leading" constant="100" id="qsb-87-cXd"/>
+                            <constraint firstItem="KFY-NR-SeF" firstAttribute="top" secondItem="eMl-1L-5Sy" secondAttribute="bottom" constant="20" id="we7-3l-Iz7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sgColor" destination="7Pe-un-hG9" id="fe9-yU-onr"/>
+                        <outlet property="tfKms" destination="KUk-aT-SNn" id="Xk4-LM-VSZ"/>
+                        <outlet property="tfMake" destination="YMR-hj-dC0" id="inI-ja-ZjV"/>
+                        <outlet property="tfModel" destination="ebg-Sj-NK3" id="RuW-80-FHJ"/>
+                        <outlet property="tfYear" destination="eMl-1L-5Sy" id="WTf-uL-7ap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wce-Jg-VTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081.1594202898552" y="-387.05357142857139"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="IER-c4-IWr">
+            <objects>
+                <viewController id="1Un-Y2-BOR" customClass="AnimationViewController" customModule="Midterm_Karanveer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SdX-kc-Yls">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gwC-ED-DoL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwf-4D-QU6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="CAR ANIMATIONS" id="RHo-QB-lN1">
+                                        <barButtonItem key="leftBarButtonItem" title="BACK" id="BKo-B0-q1l">
+                                            <connections>
+                                                <segue destination="cMX-3n-I56" kind="unwind" unwindAction="unwindToDisplayViewControllerWithSender:" id="DVq-im-KoZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uav-WS-syf">
+                                <rect key="frame" x="70" y="455" width="274" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="SPa-2I-kja"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b6D-jm-URV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b6D-jm-URV" firstAttribute="bottom" secondItem="Uav-WS-syf" secondAttribute="bottom" constant="241" id="244-6u-tuL"/>
+                            <constraint firstItem="Kwf-4D-QU6" firstAttribute="top" secondItem="b6D-jm-URV" secondAttribute="top" id="2tw-2s-jWn"/>
+                            <constraint firstItem="Uav-WS-syf" firstAttribute="leading" secondItem="b6D-jm-URV" secondAttribute="leading" constant="70" id="9ME-uS-Ozv"/>
+                            <constraint firstItem="b6D-jm-URV" firstAttribute="trailing" secondItem="Uav-WS-syf" secondAttribute="trailing" constant="70" id="T3E-uI-aCh"/>
+                            <constraint firstItem="gwC-ED-DoL" firstAttribute="leading" secondItem="b6D-jm-URV" secondAttribute="leading" id="UmV-2m-hby"/>
+                            <constraint firstItem="gwC-ED-DoL" firstAttribute="top" secondItem="b6D-jm-URV" secondAttribute="top" id="VYb-xZ-aid"/>
+                            <constraint firstItem="Kwf-4D-QU6" firstAttribute="leading" secondItem="b6D-jm-URV" secondAttribute="leading" id="Z5w-1j-ebW"/>
+                            <constraint firstAttribute="bottom" secondItem="gwC-ED-DoL" secondAttribute="bottom" id="gdy-qx-WHL"/>
+                            <constraint firstItem="gwC-ED-DoL" firstAttribute="trailing" secondItem="b6D-jm-URV" secondAttribute="trailing" id="kAS-T1-mRo"/>
+                            <constraint firstItem="Kwf-4D-QU6" firstAttribute="trailing" secondItem="b6D-jm-URV" secondAttribute="trailing" id="ud6-LV-OAh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="Uav-WS-syf" id="eVa-qm-K4H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYW-fc-0U8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="cMX-3n-I56" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2326.171875" y="-21.083455344070277"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app-background.jpg" width="5184" height="6912"/>
+        <image name="car-main-page.jpeg" width="412.79998779296875" height="216.24000549316406"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
